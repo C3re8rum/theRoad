@@ -1,0 +1,62 @@
+{
+    "Actor": {
+        "types": ["Spelare", "NPC", "Monster"],
+
+        "templates": {
+            "bakgrund": "",
+            "egenskaper": {
+                "Styrka": {
+                    "Min": 2,
+                    "Value": 19,
+                    "Max": 19
+                },
+                "Intelligens": {
+                    "Min": 3,
+                    "Value": 19,
+                    "Max": 19
+                },
+                "Uppmärksamhet": {
+                    "Min": 3,
+                    "Value": 18,
+                    "Max": 18
+                },
+                "Vighet": {
+                    "Min": 2,
+                    "Value": 19,
+                    "Max": 19
+                },
+                "Uthållighet": {
+                    "Min": -10,
+                    "Value": 19,
+                    "Max": 19
+                },
+                "Utseende": {
+                    "Min": 2,
+                    "Value": 18,
+                    "Max": 18
+                }
+            }
+        },
+        "Spelare": {
+            "raser": ["Människa", "Dvärg", "Alv"]
+        }
+    },
+    "Item": {
+        "types": ["Föremål", "Besvärjelse"],
+        "templates": {
+            "base": {
+                "description": ""
+            }
+        },
+        "Föremål": {
+            "templates": ["base"],
+            "quantity": 1,
+            "weight": 0,
+            "formula": "d20 + @str.mod + ceil(@lvl / 2)"
+        },
+        "besvärjelse": {
+            "templates": ["base"],
+            "signum": 1
+        }
+    }
+}

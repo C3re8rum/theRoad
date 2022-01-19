@@ -1,26 +1,27 @@
 {
-  "name": "theroad",
-  "title": "The Road",
-  "description": "Many details here.",
-  "version": "1.0.0",
-  "author": "Cortex",
-  "scripts": [
-    "scripts/system-script.js",
-    "scripts/system-module.mjs"
-  ],
-  "styles": [
-    "styles/system-styles.css"
-  ],
-  "languages": [
-    {
-      "lang": "sv",
-      "name": "Swedish",
-      "path": "lang/sv.json"
-    }
-  ],
-  "socket": false,
-  "gridDistance": 5,
-  "gridUnits": "m",
-  "primaryTokenAttribute": "resources.uth",
-  "secondaryTokenAttribute": null
+    "name": "theroad",
+    "title": "The Road",
+    "description": "A digital version of original the Road system created in Sweden",
+    "version": "0.0.1",
+    "author": "Cortex",
+    "scripts": [
+        "scripts/system-script.js",
+        "scripts/system-module.mjs"
+    ],
+    "styles": [
+        "styles/system-styles.css"
+    ],
+    "languages": [{
+        "lang": "sv",
+        "name": "Swedish",
+        "path": "lang/sv.json"
+    }],
+    "socket": false,
+    "gridDistance": 5,
+    "gridUnits": "m",
+    "primaryTokenAttribute": "egenskaper.uth",
+    "secondaryTokenAttribute": null,
+    "url": "https://github.com/C3re8rum/theRoad",
+    "manifest": "https://github.com/C3re8rum/theRoad/blob/main/system.json",
+    "download": "https://github.com/C3re8rum/theRoad/archive/refs/heads/main.zip"
 }
